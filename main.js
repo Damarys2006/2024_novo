@@ -18,7 +18,7 @@ for(let i=0;i <botoes.length;i++){
             }
         }
     }
-}
+} 
 
 const contadores = document.querySelectorAll(".contador");
 contadores[0].textContent = "Contagem regressiva";
@@ -33,14 +33,17 @@ const tempos =
 contadores[0].textContent = calculaTempo(tempos[0]);
 contadores[0].textContent = tempoObjetivo1
 let tempoAtual = new Date();
+
 contadores[0].textContent = calculaTempo(tempos[0]);
-contadores[0].textContent = calculaTempo(tempoObjetivo1);
-
-contadores[1].textContent = calculaTempo(tempoObjetivo2);
-contadores[2].textContent = calculaTempo(tempoObjetivo3);
-contadores[3].textContent = calculaTempo(tempoObjetivo4);
+//contadores[1].textContent = calculaTempo(tempos[1]);
+//contadores[2].textContent = calculaTempo(tempos[2]);
+//contadores[3].textContent = calculaTempo(tempos[3]);
 
 
+for(let i= 0; i<contadores.length;i++){
+    contadores[i].textContent = calculaTempo(tempo[i]);
+        }
+    
 function calculaTempo (tempoObjetivo){
 let tempoAtual = new Date();
 let tempoFinal = tempoObjetivo - tempoAtual;
