@@ -75,5 +75,5 @@ function comecaCronometro(){
     atualizaCronometro ();
     sentInterval(atualizaCronometro ,1000);
 }
-// comecaCronometro();
+comecaCronometro();
 
